@@ -16,7 +16,7 @@ def bbcr1(args):
 
 class CLI():
     def __init__(self):
-        self.parser = ArgumentParser(description='TBD', formatter_class=RawDescriptionHelpFormatter)
+        self.parser = ArgumentParser(description='A simple tool to parse BBC Radio 1 Chart and create a Google Music Playlist from it.', formatter_class=RawDescriptionHelpFormatter)
 
     def set_arguments(self):
         self.parser.add_argument("--dry-run", dest="dryrun", default=False, action="store_true",  help="Don't change anything, just output")
